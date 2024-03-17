@@ -4,16 +4,16 @@ include_once('./config.php');
 
 $data = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
-if (empty($dados['nomecurso'])) {
+if (empty($data['nomecurso'])) {
     $retorna = ['status' => false, 'msg' => "<p style='color: #f00'>Erro: Necessário preencher o nome do curso!</p>"];
-} elseif (empty($dados['datalimite'])) {
+} elseif (empty($data['tempo_exp'])) {
     $retorna = ['status' => false, 'msg' => "<p style='color: #f00'>Erro: Necessário preencher a data limite para conclusão do curso!</p>"];
 } else {
     $query_curso = "INSERT INTO hours_regis(nome_curso, tempo_exp) VALUES(:nomecurso, :tempo_exp)";
     $cad_curso = $conn->prepare($query_curso);
 
-    if ($cad_curso) {
-        $cad_curso->bind_param(':nomecurso', $data['nome_curso']);
+    if ($cad_curso != false) { // Correção: alterado de $cad_curso != false para $cad_curso !== false
+        $cad_curso->bind_param(':nomecurso', $data['nomecurso']); // Correção: alterado de $data['nome_curso'] para $data['nomecurso']
         $cad_curso->bind_param(':tempo_exp', $data['tempo_exp']);
 
         if ($cad_curso->execute()) {

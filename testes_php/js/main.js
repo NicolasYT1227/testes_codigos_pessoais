@@ -61,6 +61,7 @@ function enviarDadosProPHP(){
                 body: formData
         });
         const resposta = await data.json();
+        console.log(resposta);
     })
 };
 

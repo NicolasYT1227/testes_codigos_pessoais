@@ -1,11 +1,11 @@
 <?php
 
-$server = 'localhost';
-$dbUser = 'root';
-$dbPass = '';
+$host = 'localhost';
+$dbUserName = 'root';
+$dbPassWord = '';
 $dbName = 'teste-collab';
 
-$conn = new mysqli($server, $dbUser, $dbPass, $dbName);
+$conn = new mysqli($host, $dbUserName, $dbPassWord, $dbName);
 
 //if ($conn->connect_errno) {
     //echo "A conexão falhou: " . $conn->connect_error;
