@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family-Chakra+Petch:w ght@400:700&display=swap'); 
+
+
+:root {
+    --cor-background: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --botaoAdd-cursos: #5ee247;
+    --verdeEscuro: #399839;
+}
+
+body {
+    background-color: var(--cor-background);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+    display: block;
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.aba-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10em 0;
+}
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
+.botaoAdd-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AddButtonCurso {
+    position: relative;
+    padding: 6px 12px;
+    margin: 0 auto;
+    margin-top: 2.8rem;
+    background-color: var(--botaoAdd-cursos);
+    color: var(--branco);
+    border-radius: 12px;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    cursor: pointer;
+}
+
+.AddButtonCurso:hover {
+    transition: all 0.3s ease;
+    background-color: var(--verdeEscuro);
+    text-transform: lowercase;
+}
+
+#msgAlerta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-content {
+    background-color: var(--cor-background);
+    color: var(--branco);
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 22px auto;
+    padding: 2.5px auto;
+    text-transform: uppercase;
+    font-size: 26.5px;
+}
+
+.closeModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18.5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 22.5px;
+    font-weight: 600;
+    margin-bottom: 6.2px;
+    color: var(--verde);
+}
+
+.form-group input {
+    width: 45%;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 5.5px;
+    background-color: var(--cor-background);
+    border: 2px solid #888;
+    color: var(--branco);
+    margin-bottom: 22.5px;
+}
+
+.form-group .datalimite-curso {
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn-finalizar {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.finalizarAddCurso {
+    text-align: center;
+    width: 48.2%;
+    padding: 6.2px;
+    border-radius: 12px;
+    border: 2px solid #888;
+    font-size: 20.5px;
+    background-color: var(--verdeEscuro);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.finalizarAddCurso:hover {
+    transition: all 0.3s ease;
+    width: 52.5%;
+    font-size: 22px;
+    background-color: var(--verdeEscuro);
+}
+
+.contador {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.contador-digito {
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero {
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto {
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
+
+@media screen and (min-width:768px){
+    .botoes {
+        display: flex;
+    }
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
