@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste php</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <section class="conteudo-principal">
@@ -22,7 +23,15 @@
                     <div class="botaoAdd-cursos">
                         <button class="AddButtonCurso">Estipular metas</button>
                     </div>
-                    <div class="contador"></div>
+                    <div class="contador">
+                        <div class="aba-edits">
+                            <div class="curso-ativo"></div>
+                            <div class="btn-editForm">
+                                <div class="botao-edit" id="btnEdit"><i class="bi bi-pencil-square"></i></div>
+                                <div class="botaoExcluir" id="btnExcluir"><i class="bi bi-trash"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -40,7 +49,7 @@
                         </div>
                         <div class="form-group">
                             <label for="tempo_exp" class="labelDate">Data limite para conclusão</label>
-                            <input type="date" name="tempo_exp" class="datalimite-curso">
+                            <input type="date" name="tempo_exp" id="tempo_exp" class="datalimite-curso">
                         </div>
                         <div class="btn-finalizar">
                             <button type="submit" class="finalizarAddCurso" id="btnAddC">Enviar meta</button>

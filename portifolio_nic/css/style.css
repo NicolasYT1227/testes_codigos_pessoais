@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family-Chakra+Petch:w ght@400:700&display=swap'); 
+
+:root {
+    --cor-de-fundo: #2f2e2e;
+    --cor-secundaria: rgba(54, 52, 82, 0.5);
+    --branco: #fff;
+    --cor-borda: #f6f6f6;
+    --cor-nav: #979797;
+    --borda-nav: rgba(52, 50, 80, 0.8);
+    --cor-btnSaiba: rgba(36, 185, 253, 0.6);
+    --cor-textoSaibaMais: #000;
+    --cor-textProjects: rgba(245, 240, 240, 0.8);
+    --cor-de-fundo-projetos: rgba(71, 57, 57, 0.8);
+    --cor-de-fundo-contato: rgba(61, 47, 47, 0.8);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.btn-nav {
+    padding: 8px;
+    margin: 0 2rem;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-nav);
+    cursor: pointer;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btn-nav:hover {
+    transition: all 0.3s ease;
+    color: var(--branco);
+}
+
+.esconder {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteudo-nick {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.imgNick {
+    width: 13.5rem;
+    height: 14rem;
+    margin-top: 9.5rem;
+    border-radius: 160px;
+    padding: 5px;
+}
+
+.conteudo-header-nicolas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--branco);
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.btn-sobre {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 2.5rem;
+}
+
+.btn-saibaMais {
+    width: 12%;
+    height: 12%;
+    padding: 10px;
+    border-radius: 7.5px;
+    background-color: var(--cor-btnSaiba);
+    color: var(--cor-textoSaibaMais);
+    font-weight: 600;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 40vh;
+}
+
+.title-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.title-project #title {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.conteudo-projetos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content-project {
+    border: 5px solid #535050;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+    height: auto;
+    background-color: var(--cor-de-fundo-projetos);
+}
+
+.content-project:hover {
+    transition: all 0.3s ease;
+    border: 10px solid #535050;
+}
+
+.content-project .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-project .img .imgProject {
+    width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.content-project .contentP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-project .contentP .title-project {
+    color: var(--branco);
+    margin-bottom: 15px;
+}
+
+.content-project .leg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-project .leg .leProject {
+    color: var(--cor-textProjects);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-project .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-project .desc .btnP-desc {
+    padding: 2.5px 5px;
+    border-radius: 6px;
+    width: 90px;
+    background-color: var(--cor-btnSaiba);
+    margin-bottom: 2vh;
+    cursor: pointer;
+}
+
+.title-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    margin-bottom: 5vh;
+}
+
+.title-contato #titleC {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-contato {
+    margin: auto;
+    border: 5px solid #535050;
+    border-radius: 10px;
+    padding: 20px;
+    width: 12.5%;
+    height: auto;
+    background-color: var(--cor-de-fundo-contato);
+}
+
+.content-contato .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-contato .content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-contato .content i {
+    font-size: 50px;
+}
+
+.content-contato .content i:hover {
+    transition: all 0.3s ease;
+    font-size: 45px;
+}
+
+.content-contato .content #whatts {
+    background-color: #2f802f;
+    color: #F2f2f2;
+}
+
+.content-contato .content #ins {
+    background-color: #990e0e;
+    color: #F2f2f2;
+}
+
+.content-contato .content #lin {
+    background-color: #f2f2f2;
+    color: #2f217f;
+    margin-bottom: 20px;
+}
+
+.content-contato .content .legContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media (max-width:960px){
+    .img-content {
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    
+    .imgNick {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 9.5rem;
+        border-radius: 160px;
+        padding: 5px;
+    }
+
+    .conteudo-header-nicolas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: var(--branco);
+        justify-content: center;
+        align-items: center;
+        margin-top: 9rem;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .btn-saibaMais {
+        width: 18%;
+        height: 10%;
+        padding: 5px;
+    }
+}

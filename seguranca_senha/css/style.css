@@ -80,3 +80,8 @@ body{
     display: flex; 
     justify-content: center;
 }
+
+.parametro-conteudo-senha {
+    display: flex;
+    justify-content: center;
+}

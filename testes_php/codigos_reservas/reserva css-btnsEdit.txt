@@ -1,0 +1,11 @@
+.botaoExcluir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: var(--fundo-botaoStrap);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.10px solid var(--borda-straps);
+}
