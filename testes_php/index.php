@@ -26,11 +26,10 @@
                     <div class="contador">
                         <div class="aba-edits">
                             <div class="curso-ativo"></div>
-                            <div class="btn-editForm">
-                                <div class="botao-edit" id="btnEdit"><i class="bi bi-pencil-square"></i></div>
-                                <div class="botaoExcluir" id="btnExcluir"><i class="bi bi-trash"></i></div>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn-editForm">
+                        <div class="botaoExcluir" id="btnExcluir"><i class="bi bi-trash"></i></div>
                     </div>
                 </div>
             </div>
